@@ -2,16 +2,23 @@ import React from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import style from "../styles/hero.module.css";
 import Header from "./Header";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className={style.banner}>
       <Header />
       <Container>
         <Row>
-          <Col xs={12} md={7} className="mb-3">
+          <Col xs={12} md={7} className="mb-3" data-aos="fade-down-right">
             <div className="d-flex justify-content-center flex-column h-100">
-              <h1 style={{fontSize:'4rem'}}>
+              <h1 style={{ fontSize: "4rem" }}>
                 Software to increase your performance
               </h1>
               <p className="my-4">
@@ -31,7 +38,7 @@ const Hero = () => {
               <p className="text-success text-sm">No credit card required</p>
             </div>
           </Col>
-          <Col xs={12} md={5}>
+          <Col xs={12} md={5} data-aos="fade-down-left">
             <div className="w-100">
               <img
                 src="https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/relationships-2.png"

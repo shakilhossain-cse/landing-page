@@ -2,12 +2,18 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "../styles/features.module.css";
 import { FaArrowCircleRight } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Features = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Container style={{ marginTop: "8rem", marginBottom: "5rem" }}>
       <Row className="gx-5">
-        <Col md={6} xs={12} className="my-5">
+        <Col md={6} xs={12} className="my-5" data-aos="zoom-in-right">
           <img
             src="https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Frame-11-1.png"
             alt=""
@@ -23,7 +29,8 @@ const Features = () => {
               omnis voluptas assumenda est, omnis dolor repellendus temporibus
               autem.
             </p>
-            <div className="d-flex">
+            <div className="d-flex" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
               <div
                 style={{ width: "5rem", color: "goldenrod", fontSize: "2rem" }}
               >
@@ -37,7 +44,8 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex">
+            <div className="d-flex" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
               <div
                 style={{ width: "5rem", color: "goldenrod", fontSize: "2rem" }}
               >
@@ -46,7 +54,8 @@ const Features = () => {
               <div>
                 <h5 className="py-3">Custom advertisement</h5>
                 <p className="text-muted">
-                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil molestiae.
                 </p>
               </div>
             </div>
