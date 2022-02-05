@@ -1,0 +1,14 @@
+.banner{
+    background-image: url('https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Frame-6-9.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  };
+.title{
+  font-size: 10rem;
+
+}

@@ -1,0 +1,12 @@
+.banner {
+  background-image: url("https://n.foxdsgn.com/deva/wp-content/uploads/2020/10/Frame-12-11.png");
+  background-color: #fcf8f7;
+  background-repeat: no-repeat;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem   ;
+}
+.bannerContainer{
+  background-color: white;
+}
